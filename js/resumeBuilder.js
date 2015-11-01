@@ -6,7 +6,7 @@ This is empty on purpose! Your code to build the resume will go here.
  var role = "SharePoint Administrator";
  var formattedName = HTMLheaderName.replace("%data%", name);
  var formattedRole = HTMLheaderRole.replace("%data%", role);
- var skills = {"CSS", "HTML", "C#", "ASP.Net"}
+ var skills = ["CSS", "HTML", "C#", "ASP.Net"];
  var bio = {
 	 "name" : "Akisha",
 	 "role": "SharePoint Administrator",
@@ -20,4 +20,5 @@ This is empty on purpose! Your code to build the resume will go here.
   
   $("#header").append(formattedRole);
   $("#header").prepend(formattedName);
+  $("#main").append(bio);
  
